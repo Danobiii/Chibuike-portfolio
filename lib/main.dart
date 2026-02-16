@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:insurance_wallet/presentation/screens/car_documents_screen.dart';
+import 'package:insurance_wallet/presentation/screens/car_insurance_policy_details.dart';
+import 'package:insurance_wallet/presentation/screens/health_documents_screen.dart';
+import 'package:insurance_wallet/presentation/screens/health_insurance_policy_details.dart';
+import 'package:insurance_wallet/presentation/screens/mocked_documents_screen.dart';
+import 'package:insurance_wallet/presentation/screens/policies_screen.dart';
 import 'package:insurance_wallet/presentation/screens/splash_screen.dart';
+import 'package:insurance_wallet/presentation/screens/travel_documents_screen.dart';
+import 'package:insurance_wallet/presentation/screens/travel_policy_insurance_details.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,25 +26,35 @@ class MyApp extends StatelessWidget {
         designSize: const Size(375, 812),
         minTextAdapt: true,
         child: MaterialApp(
+          initialRoute: "/splash",
+          routes: {
+            '/splash': (context) => SplashScreen(),
+            '/policies_screen': (context) => PoliciesScreen(),
+            '/car_details': (context) => CarInsurancePolicyDetails(),
+            '/view_documents_car': (context) => CarDocumentsScreen(),
+            '/view_documents_health': (context) => HealthDocumentsScreen(),
+            '/view_documents_travel': (context) => TravelDocumentsScreen(),
+
+            '/documents_screen': (context) => MockedDocumentsScreen(),
+            '/health_details': (context) => HealthInsurancePolicyDetails(),
+            '/travel_details': (context) => TravelPolicyInsuranceDetails(),
+          },
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
-            // This is the theme of your application.
-            //
-            // TRY THIS: Try running your application with "flutter run". You'll see
-            // the application has a purple toolbar. Then, without quitting the app,
-            // try changing the seedColor in the colorScheme below to Colors.green
-            // and then invoke "hot reload" (save your changes or press the "hot
-            // reload" button in a Flutter-supported IDE, or press "r" if you used
-            // the command line to start the app).
-            //
-            // Notice that the counter didn't reset back to zero; the application
-            // state is not lost during the reload. To reset the state, use hot
-            // restart instead.
-            //
-            // This works for code too, not just values: Most code changes can be
-            // tested with just a hot reload.
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            //Light mode
+            brightness: Brightness.light,
+            colorScheme: ColorScheme.light(
+              primary: Colors.blue,
+              surface: Colors.white,
+            ),
+          ),
+          darkTheme: ThemeData(
+            brightness: Brightness.dark,
+            colorScheme: ColorScheme.dark(
+              primary: Colors.blue,
+              surface: Color(0xFF1E1E1E),
+            ),
           ),
           home: const SplashScreen(),
         ),

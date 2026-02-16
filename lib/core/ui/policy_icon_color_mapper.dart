@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:insurance_wallet/domain/entities/policies_entity.dart';
 
-IconData getPolicyIcon(PolicyType type) {
-  switch (type) {
+Color getIconColor(PolicyType policyTypeIcon) {
+  switch (policyTypeIcon) {
     case PolicyType.car:
-      return Icons.directions_car;
+      return Colors.blue;
     case PolicyType.health:
-      return Icons.health_and_safety;
+      return Colors.red;
     case PolicyType.travel:
-      return Icons.flight;
-  }
+      return Colors.blue;
+    }
 }

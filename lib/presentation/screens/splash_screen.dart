@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:insurance_wallet/resources/components/png_svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:insurance_wallet/controllers/splashscreen_controllers.dart';
+import 'package:insurance_wallet/core/routes/splashscreen_controllers.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -16,16 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     _splashScreen.getStarted(context);
   }
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   Future.delayed(Duration(seconds: 30), () {
-  //     Navigator.pushReplacement(
-  //       context,
-  //       MaterialPageRoute(builder: (context) => PoliciesScreen()),
-  //     );
-  //   });
-  // }
+  
 
   @override
   Widget build(BuildContext context) {
