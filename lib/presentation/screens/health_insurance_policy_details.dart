@@ -17,9 +17,10 @@ class _HealthInsurancePolicyDetailsState
     extends State<HealthInsurancePolicyDetails> {
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.appBarColor,
+        backgroundColor: theme.colorScheme.primary,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

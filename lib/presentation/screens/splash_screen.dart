@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insurance_wallet/core/theme/app_colors.dart';
 import 'package:insurance_wallet/resources/components/png_svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:insurance_wallet/core/routes/splashscreen_controllers.dart';
@@ -16,12 +17,12 @@ class _SplashScreenState extends State<SplashScreen> {
     _splashScreen.getStarted(context);
   }
 
-  
-
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 3, 74, 132),
+      backgroundColor: AppColors.appBarColor,
       body: SafeArea(
         child: Center(
           child: Column(
@@ -31,7 +32,10 @@ class _SplashScreenState extends State<SplashScreen> {
               SizedBox(height: 20.h),
               Text(
                 "Insurance wallet",
-                style: TextStyle(fontSize: 40.sp, color: Colors.white),
+                style: TextStyle(
+                  fontSize: 40.sp,
+                  color: theme.colorScheme.onPrimary,
+                ),
               ),
               SizedBox(height: 20.h),
               Text(

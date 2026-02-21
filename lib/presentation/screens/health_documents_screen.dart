@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:insurance_wallet/core/theme/app_colors.dart';
 import 'package:insurance_wallet/presentation/screens/car_documents_screen.dart';
 import 'package:insurance_wallet/resources/components/app_icons.dart';
 
@@ -14,9 +13,11 @@ class HealthDocumentsScreen extends StatefulWidget {
 class _HealthDocumentsScreenState extends State<HealthDocumentsScreen> {
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.appBarColor,
+        backgroundColor: theme.colorScheme.primary,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

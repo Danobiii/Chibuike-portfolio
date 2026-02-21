@@ -9,9 +9,11 @@ class CarInsurancePolicyDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.appBarColor,
+        backgroundColor: theme.colorScheme.primary,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -153,7 +155,7 @@ class InsuranceBody extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.r),
                 ),
-                backgroundColor: AppColors.appBarColor,
+                backgroundColor: Theme.of(context).colorScheme.primary,
               ),
               onPressed: onTapClaims,
               child: Text(
@@ -175,7 +177,7 @@ class InsuranceBody extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.r),
                 ),
-                backgroundColor: AppColors.appBarColor,
+                backgroundColor: Theme.of(context).colorScheme.primary,
               ),
               onPressed: onTapDocuments,
               child: Text(

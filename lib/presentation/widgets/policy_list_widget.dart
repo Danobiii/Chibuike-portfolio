@@ -12,6 +12,7 @@ class PolicyListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     final statusColor = getStatusColor(entity.status);
     final iconColor = getIconColor(entity.policyTypeIcon);
 
@@ -20,7 +21,10 @@ class PolicyListWidget extends StatelessWidget {
 
       child: Card(
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
+        shape: RoundedRectangleBorder(
+          side: BorderSide(color: theme.colorScheme.onSurface),
+          borderRadius: BorderRadius.circular(8.r),
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
 

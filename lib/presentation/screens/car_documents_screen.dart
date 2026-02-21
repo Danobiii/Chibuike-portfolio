@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:insurance_wallet/core/theme/app_colors.dart';
 import 'package:insurance_wallet/resources/components/app_icons.dart';
 
 class CarDocumentsScreen extends StatefulWidget {
@@ -16,7 +15,7 @@ class _CarDocumentsScreenState extends State<CarDocumentsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.appBarColor,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
