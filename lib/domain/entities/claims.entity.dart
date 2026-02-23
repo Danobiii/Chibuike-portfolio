@@ -1,14 +1,15 @@
-
 class ClaimsEntity {
-  final String claimText;
+  final String id;
+  final String amount;
   final String accidentText;
   final String filedText;
-  final String statusText;
+  final String status;
 
   ClaimsEntity({
-    required this.claimText,
+    required this.id,
+    required this.amount,
     required this.accidentText,
     required this.filedText,
-    required this.statusText,
+    required this.status,
   });
 }

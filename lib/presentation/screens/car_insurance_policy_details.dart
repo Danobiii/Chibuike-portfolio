@@ -43,7 +43,8 @@ class CarInsurancePolicyDetails extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => ViewClaimsScreen(policy: PolicyType.car),
+              builder: (context) =>
+                  ViewClaimsScreen(policy: PolicyType.car, claim: []),
             ),
           );
         },
