@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:insurance_wallet/core/theme/app_colors.dart';
-import 'package:insurance_wallet/domain/entities/policies_entity.dart';
-import 'package:insurance_wallet/presentation/screens/view_claims_screen.dart';
+import 'package:insurance_wallet/models/entities/policies_entity.dart';
+import 'package:insurance_wallet/views/screens/view_claims_screen.dart';
 
 class CarInsurancePolicyDetails extends StatelessWidget {
   const CarInsurancePolicyDetails({super.key});

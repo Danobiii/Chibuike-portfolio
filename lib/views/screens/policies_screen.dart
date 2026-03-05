@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:insurance_wallet/core/theme/app_colors.dart';
-import 'package:insurance_wallet/presentation/policy/policy_provider.dart';
-import 'package:insurance_wallet/presentation/screens/all_claims_screen.dart';
-import 'package:insurance_wallet/presentation/screens/all_documents_screen.dart';
-import 'package:insurance_wallet/presentation/screens/settings_screen.dart';
-import 'package:insurance_wallet/presentation/widgets/policy_list_widget.dart';
+import 'package:insurance_wallet/views/policy/policy_provider.dart';
+import 'package:insurance_wallet/views/screens/all_claims_screen.dart';
+import 'package:insurance_wallet/views/screens/all_documents_screen.dart';
+import 'package:insurance_wallet/views/screens/settings_screen.dart';
+import 'package:insurance_wallet/views/widgets/policy_list_widget.dart';
 import 'package:insurance_wallet/resources/components/png_svg.dart';
 
 class PoliciesScreen extends ConsumerStatefulWidget {

@@ -1,4 +1,4 @@
-import 'package:insurance_wallet/domain/entities/claims.entity.dart';
+import 'package:insurance_wallet/models/entities/claims.entity.dart';
 
 final List<ClaimsEntity> mockClaims = [
   // getClaimsForPolicy(PolicyType type) {

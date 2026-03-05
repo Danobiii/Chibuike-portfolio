@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:insurance_wallet/core/theme/theme_provider.dart';
-import 'package:insurance_wallet/presentation/screens/car_documents_screen.dart';
-import 'package:insurance_wallet/presentation/screens/car_insurance_policy_details.dart';
-import 'package:insurance_wallet/presentation/screens/health_documents_screen.dart';
-import 'package:insurance_wallet/presentation/screens/health_insurance_policy_details.dart';
-import 'package:insurance_wallet/presentation/screens/mocked_documents_screen.dart';
-import 'package:insurance_wallet/presentation/screens/policies_screen.dart';
-import 'package:insurance_wallet/presentation/screens/splash_screen.dart';
-import 'package:insurance_wallet/presentation/screens/travel_documents_screen.dart';
-import 'package:insurance_wallet/presentation/screens/travel_policy_insurance_details.dart';
+import 'package:insurance_wallet/views/screens/car_documents_screen.dart';
+import 'package:insurance_wallet/views/screens/car_insurance_policy_details.dart';
+import 'package:insurance_wallet/views/screens/health_documents_screen.dart';
+import 'package:insurance_wallet/views/screens/health_insurance_policy_details.dart';
+import 'package:insurance_wallet/views/screens/mocked_documents_screen.dart';
+import 'package:insurance_wallet/views/screens/policies_screen.dart';
+import 'package:insurance_wallet/views/screens/splash_screen.dart';
+import 'package:insurance_wallet/views/screens/travel_documents_screen.dart';
+import 'package:insurance_wallet/views/screens/travel_policy_insurance_details.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));

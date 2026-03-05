@@ -1,23 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:insurance_wallet/presentation/screens/car_documents_screen.dart';
 import 'package:insurance_wallet/resources/components/app_icons.dart';
 
-class TravelDocumentsScreen extends StatefulWidget {
-  const TravelDocumentsScreen({super.key});
+class CarDocumentsScreen extends StatefulWidget {
+  const CarDocumentsScreen({super.key});
 
   @override
-  State<TravelDocumentsScreen> createState() => _TravelDocumentsScreenState();
+  State<CarDocumentsScreen> createState() => _CarDocumentsScreenState();
 }
 
-class _TravelDocumentsScreenState extends State<TravelDocumentsScreen> {
+class _CarDocumentsScreenState extends State<CarDocumentsScreen> {
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: theme.colorScheme.primary,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -36,7 +33,7 @@ class _TravelDocumentsScreenState extends State<TravelDocumentsScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Travel Insurance Document',
+              'Car Insurance Document',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -45,11 +42,11 @@ class _TravelDocumentsScreenState extends State<TravelDocumentsScreen> {
             ),
             SizedBox(height: 20.h),
             DocumentList(
-              documentName: "Policy Certificate",
+              documentName: 'Policy Certificate.pdf',
               onTap: () {
                 Navigator.pushNamed(context, "/documents_screen");
               },
-              text: "View",
+              text: 'View',
               fileIcon: Icon(AppIcons.documentIcon),
             ),
             SizedBox(height: 10.h),
@@ -83,6 +80,39 @@ class _TravelDocumentsScreenState extends State<TravelDocumentsScreen> {
               fileIcon: Icon(AppIcons.documentIcon),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class DocumentList extends StatelessWidget {
+  final String documentName;
+  final Icon fileIcon;
+  final VoidCallback onTap;
+  final String text;
+  const DocumentList({
+    super.key,
+    required this.documentName,
+    required this.onTap,
+    required this.text,
+    required this.fileIcon,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.grey),
+        borderRadius: BorderRadius.circular(5.r),
+      ),
+      child: ListTile(
+        onTap: onTap,
+        leading: fileIcon,
+        title: Text(documentName),
+        trailing: Text(
+          text,
+          style: TextStyle(color: Colors.blue, fontSize: 15.sp),
         ),
       ),
     );

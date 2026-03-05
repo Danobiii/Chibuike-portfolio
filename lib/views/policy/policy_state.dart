@@ -1,4 +1,4 @@
-import 'package:insurance_wallet/domain/entities/policies_entity.dart';
+import 'package:insurance_wallet/models/entities/policies_entity.dart';
 
 class PolicyState {
   final bool isLoading;

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:insurance_wallet/core/ui/policy_icon_color_mapper.dart';
-import 'package:insurance_wallet/core/ui/policy_icon_mapper.dart';
-import 'package:insurance_wallet/core/ui/policy_status_mapper.dart';
-import 'package:insurance_wallet/domain/entities/policies_entity.dart';
-import 'package:insurance_wallet/presentation/navigation/insurance_details_navigation.dart';
+import 'package:insurance_wallet/core/utils/policy_icon_color_mapper.dart';
+import 'package:insurance_wallet/core/utils/policy_icon_mapper.dart';
+import 'package:insurance_wallet/core/utils/policy_status_mapper.dart';
+import 'package:insurance_wallet/models/entities/policies_entity.dart';
+import 'package:insurance_wallet/views/navigation/insurance_details_navigation.dart';
 
 class PolicyListWidget extends StatelessWidget {
   final PoliciesEntity entity;

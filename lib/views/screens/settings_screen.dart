@@ -115,7 +115,7 @@ class SettingsOptions extends StatelessWidget {
         ),
         trailing: value != null
             ? Switch(
-                activeColor: const Color.fromARGB(255, 7, 244, 15),
+                activeThumbColor: const Color.fromARGB(255, 7, 244, 15),
                 value: value!,
                 onChanged: onChanged,
               )

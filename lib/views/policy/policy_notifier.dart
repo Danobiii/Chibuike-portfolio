@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:insurance_wallet/data/services/graphql_services.dart';
-import 'package:insurance_wallet/presentation/policy/policy_state.dart';
+import 'package:insurance_wallet/services/graphql_services.dart';
+import 'package:insurance_wallet/views/policy/policy_state.dart';
 
 class PolicyNotifier extends StateNotifier<PolicyState> {
   PolicyNotifier() : super(PolicyState(isLoading: false));

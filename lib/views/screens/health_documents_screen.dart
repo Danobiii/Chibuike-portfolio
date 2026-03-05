@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:insurance_wallet/presentation/screens/car_documents_screen.dart';
+import 'package:insurance_wallet/views/screens/car_documents_screen.dart';
 import 'package:insurance_wallet/resources/components/app_icons.dart';
 
 class HealthDocumentsScreen extends StatefulWidget {

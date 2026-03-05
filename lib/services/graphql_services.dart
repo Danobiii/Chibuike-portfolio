@@ -1,6 +1,6 @@
 import 'package:graphql_flutter/graphql_flutter.dart';
-import 'package:insurance_wallet/domain/entities/policies_entity.dart';
-import 'package:insurance_wallet/data/data_sources/mocked_policies.dart';
+import 'package:insurance_wallet/models/entities/policies_entity.dart';
+import 'package:insurance_wallet/models/data_sources/mocked_policies.dart';
 
 class GraphqlServices {
   late final GraphQLClient _policies;
