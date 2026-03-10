@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:insurance_wallet/resources/components/app_icons.dart';
+import 'package:insurance_wallet/core/routes/app_routes.dart';
+import 'package:insurance_wallet/resources/app_icons.dart';
 
 class CarDocumentsScreen extends StatefulWidget {
   const CarDocumentsScreen({super.key});
@@ -44,7 +45,7 @@ class _CarDocumentsScreenState extends State<CarDocumentsScreen> {
             DocumentList(
               documentName: 'Policy Certificate.pdf',
               onTap: () {
-                Navigator.pushNamed(context, "/documents_screen");
+                Navigator.pushNamed(context, AppRoutes.documentScreen);
               },
               text: 'View',
               fileIcon: Icon(AppIcons.documentIcon),
@@ -54,7 +55,7 @@ class _CarDocumentsScreenState extends State<CarDocumentsScreen> {
             DocumentList(
               documentName: 'Insurance Schedule.pdf',
               onTap: () {
-                Navigator.pushNamed(context, "/documents_screen");
+                Navigator.pushNamed(context, AppRoutes.documentScreen);
               },
               text: 'View',
               fileIcon: Icon(AppIcons.documentIcon),
@@ -64,7 +65,7 @@ class _CarDocumentsScreenState extends State<CarDocumentsScreen> {
             DocumentList(
               documentName: 'Policy Certificate.pdf',
               onTap: () {
-                Navigator.pushNamed(context, "/documents_screen");
+                Navigator.pushNamed(context, AppRoutes.documentScreen);
               },
               text: 'View',
               fileIcon: Icon(AppIcons.documentIcon),
@@ -74,7 +75,7 @@ class _CarDocumentsScreenState extends State<CarDocumentsScreen> {
             DocumentList(
               documentName: 'Policy Certificate.pdf',
               onTap: () {
-                Navigator.pushNamed(context, "/documents_screen");
+                Navigator.pushNamed(context, AppRoutes.documentScreen);
               },
               text: 'View',
               fileIcon: Icon(AppIcons.documentIcon),

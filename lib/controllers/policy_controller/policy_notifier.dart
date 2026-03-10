@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:insurance_wallet/services/graphql_services.dart';
+import 'package:insurance_wallet/controllers/services/graphql_services.dart';
 import 'package:insurance_wallet/views/policy/policy_state.dart';
 
 class PolicyNotifier extends StateNotifier<PolicyState> {

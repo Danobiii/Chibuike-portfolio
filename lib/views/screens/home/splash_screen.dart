@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:insurance_wallet/core/theme/app_colors.dart';
-import 'package:insurance_wallet/resources/components/png_svg.dart';
+import 'package:insurance_wallet/resources/png_svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:insurance_wallet/controllers/splashscreen_controllers.dart';
 

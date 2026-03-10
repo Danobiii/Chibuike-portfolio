@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:insurance_wallet/core/routes/app_routes.dart';
 import 'package:insurance_wallet/core/theme/theme_provider.dart';
-import 'package:insurance_wallet/views/screens/car_documents_screen.dart';
-import 'package:insurance_wallet/views/screens/car_insurance_policy_details.dart';
-import 'package:insurance_wallet/views/screens/health_documents_screen.dart';
-import 'package:insurance_wallet/views/screens/health_insurance_policy_details.dart';
-import 'package:insurance_wallet/views/screens/mocked_documents_screen.dart';
-import 'package:insurance_wallet/views/screens/policies_screen.dart';
-import 'package:insurance_wallet/views/screens/splash_screen.dart';
-import 'package:insurance_wallet/views/screens/travel_documents_screen.dart';
-import 'package:insurance_wallet/views/screens/travel_policy_insurance_details.dart';
+import 'package:insurance_wallet/views/screens/home/car_documents_screen.dart';
+import 'package:insurance_wallet/views/screens/home/car_insurance_policy_details.dart';
+import 'package:insurance_wallet/views/screens/home/health_documents_screen.dart';
+import 'package:insurance_wallet/views/screens/home/health_insurance_policy_details.dart';
+import 'package:insurance_wallet/views/screens/home/mocked_documents_screen.dart';
+import 'package:insurance_wallet/views/screens/home/policies_screen.dart';
+import 'package:insurance_wallet/views/screens/home/splash_screen.dart';
+import 'package:insurance_wallet/views/screens/home/travel_documents_screen.dart';
+import 'package:insurance_wallet/views/screens/home/travel_policy_insurance_details.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -30,15 +31,15 @@ class MyApp extends ConsumerWidget {
         // initialRoute: "/splash",
         routes: {
           // '/splash': (context) => SplashScreen(),
-          '/policies_screen': (context) => PoliciesScreen(),
-          '/car_details': (context) => CarInsurancePolicyDetails(),
-          '/view_documents_car': (context) => CarDocumentsScreen(),
-          '/view_documents_health': (context) => HealthDocumentsScreen(),
-          '/view_documents_travel': (context) => TravelDocumentsScreen(),
+          AppRoutes.policiesScreen: (context) => PoliciesScreen(),
+          AppRoutes.carDetails: (context) => CarInsurancePolicyDetails(),
+          AppRoutes.viewDocumentsCar: (context) => CarDocumentsScreen(),
+          AppRoutes.viewDocumentsHealth: (context) => HealthDocumentsScreen(),
+          AppRoutes.viewDocumentsTravel: (context) => TravelDocumentsScreen(),
 
-          '/documents_screen': (context) => MockedDocumentsScreen(),
-          '/health_details': (context) => HealthInsurancePolicyDetails(),
-          '/travel_details': (context) => TravelPolicyInsuranceDetails(),
+          AppRoutes.documentScreen: (context) => MockedDocumentsScreen(),
+          AppRoutes.healthDetails: (context) => HealthInsurancePolicyDetails(),
+          AppRoutes.travelDetails: (context) => TravelPolicyInsuranceDetails(),
         },
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',

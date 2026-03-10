@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:insurance_wallet/views/screens/car_documents_screen.dart';
-import 'package:insurance_wallet/resources/components/app_icons.dart';
+import 'package:insurance_wallet/core/routes/app_routes.dart';
+import 'package:insurance_wallet/views/screens/home/car_documents_screen.dart';
+import 'package:insurance_wallet/resources/app_icons.dart';
 
-class HealthDocumentsScreen extends StatefulWidget {
-  const HealthDocumentsScreen({super.key});
+class TravelDocumentsScreen extends StatefulWidget {
+  const TravelDocumentsScreen({super.key});
 
   @override
-  State<HealthDocumentsScreen> createState() => _HealthDocumentsScreenState();
+  State<TravelDocumentsScreen> createState() => _TravelDocumentsScreenState();
 }
 
-class _HealthDocumentsScreenState extends State<HealthDocumentsScreen> {
+class _TravelDocumentsScreenState extends State<TravelDocumentsScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -36,7 +37,7 @@ class _HealthDocumentsScreenState extends State<HealthDocumentsScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Health Insurance Document',
+              'Travel Insurance Document',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -47,7 +48,7 @@ class _HealthDocumentsScreenState extends State<HealthDocumentsScreen> {
             DocumentList(
               documentName: "Policy Certificate",
               onTap: () {
-                Navigator.pushNamed(context, "/documents_screen");
+                Navigator.pushNamed(context, AppRoutes.documentScreen);
               },
               text: "View",
               fileIcon: Icon(AppIcons.documentIcon),
@@ -57,7 +58,7 @@ class _HealthDocumentsScreenState extends State<HealthDocumentsScreen> {
             DocumentList(
               documentName: 'Insurance Schedule.pdf',
               onTap: () {
-                Navigator.pushNamed(context, "/documents_screen");
+                Navigator.pushNamed(context, AppRoutes.documentScreen);
               },
               text: 'View',
               fileIcon: Icon(AppIcons.documentIcon),
@@ -67,7 +68,7 @@ class _HealthDocumentsScreenState extends State<HealthDocumentsScreen> {
             DocumentList(
               documentName: 'Policy Certificate.pdf',
               onTap: () {
-                Navigator.pushNamed(context, "/documents_screen");
+                Navigator.pushNamed(context, AppRoutes.documentScreen);
               },
               text: 'View',
               fileIcon: Icon(AppIcons.documentIcon),
@@ -77,7 +78,7 @@ class _HealthDocumentsScreenState extends State<HealthDocumentsScreen> {
             DocumentList(
               documentName: 'Policy Certificate.pdf',
               onTap: () {
-                Navigator.pushNamed(context, "/documents_screen");
+                Navigator.pushNamed(context, AppRoutes.documentScreen);
               },
               text: 'View',
               fileIcon: Icon(AppIcons.documentIcon),

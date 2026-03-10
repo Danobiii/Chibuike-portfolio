@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:insurance_wallet/core/routes/app_routes.dart';
 import 'package:insurance_wallet/core/theme/app_colors.dart';
 import 'package:insurance_wallet/models/entities/policies_entity.dart';
 import 'package:insurance_wallet/views/navigation/claims_repository.dart';
-import 'package:insurance_wallet/views/screens/car_insurance_policy_details.dart';
-import 'package:insurance_wallet/views/screens/view_claims_screen.dart';
-import 'package:insurance_wallet/resources/components/app_icons.dart';
+import 'package:insurance_wallet/views/screens/home/car_insurance_policy_details.dart';
+import 'package:insurance_wallet/views/screens/home/view_claims_screen.dart';
+import 'package:insurance_wallet/resources/app_icons.dart';
 
 class TravelPolicyInsuranceDetails extends StatefulWidget {
   const TravelPolicyInsuranceDetails({super.key});
@@ -60,7 +61,7 @@ class _TravelPolicyInsuranceDetailsState
         },
         viewClaimsText: "View Claims",
         onTapDocuments: () {
-          Navigator.pushNamed(context, "/view_documents_travel");
+                Navigator.pushNamed(context, AppRoutes.viewDocumentsTravel);
         },
         viewDocumentsText: "View Documents",
         statusColor: AppColors.inReviewColor,

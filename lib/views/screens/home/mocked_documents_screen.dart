@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:insurance_wallet/resources/components/app_icons.dart';
+import 'package:insurance_wallet/resources/app_icons.dart';
 
 class MockedDocumentsScreen extends StatefulWidget {
   const MockedDocumentsScreen({super.key});

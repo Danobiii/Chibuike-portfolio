@@ -5,8 +5,8 @@ import 'package:insurance_wallet/models/entities/claims.entity.dart';
 
 import 'package:insurance_wallet/models/entities/policies_entity.dart';
 
-import 'package:insurance_wallet/resources/components/app_icons.dart';
-import 'package:insurance_wallet/resources/components/png_svg.dart';
+import 'package:insurance_wallet/resources/app_icons.dart';
+import 'package:insurance_wallet/resources/png_svg.dart';
 
 class ViewClaimsScreen extends StatelessWidget {
   final List<ClaimsEntity> claim;
